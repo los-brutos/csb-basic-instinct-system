@@ -1,0 +1,59 @@
+{
+  "id": "csb-basic-instinct-system",
+  "title": "CSB - Basic Instinct System",
+  "description": "Implémentation du Basic Instinct System des Imagitateurs avec Custom System Builder",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Eric des Imagitateurs",
+      "discord": "les_imagitateurs_eric",
+      "flags": {}
+    },
+    {
+      "name": "Los Brutos",
+      "discord": "losbrutos",
+      "flags": {}
+    },
+    {
+      "name": "Sylvestre",
+      "discord": "bobourstoutcool",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "styles": [
+    "styles/csb-basic-instinct-system.css"
+  ],
+  "packs": [
+    {
+      "name": "templates-acteurs",
+      "label": "BIS - Templates Acteurs",
+      "path": "packs/templates-acteurs",
+      "type": "Actor",
+      "system": "custom-system-builder",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+  },
+  {
+    "name": "templates-objets",
+    "label": "BIS - Templates Objets",
+    "path": "packs/templates-objets",
+    "type": "Item",
+    "system": "custom-system-builder",
+    "flags": {},
+    "ownership": {
+      "PLAYER": "NONE",
+      "ASSISTANT": "OWNER"
+    }
+  }
+  ]
+}
