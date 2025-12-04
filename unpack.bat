@@ -21,6 +21,9 @@ echo.
 echo /// unpack compendium "templates-objets"
 call fvtt package unpack -c templates-objets
 echo.
+echo /// unpack compendium "basic-instinct-system-rules"
+call fvtt package unpack -c basic-instinct-system-rules
+echo.
 echo * ********************************** *
 echo * all compendiums have been unpacked *
 echo * ********************************** *

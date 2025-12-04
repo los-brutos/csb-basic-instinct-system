@@ -21,6 +21,9 @@ echo.
 echo /// pack compendium "templates-objets"
 call fvtt package pack templates-objets
 echo.
+echo /// pack compendium "basic-instinct-system-rules"
+call fvtt package pack basic-instinct-system-rules
+echo.
 echo * ********************************* *
 echo * all compendiums have been created *
 echo * ********************************* *

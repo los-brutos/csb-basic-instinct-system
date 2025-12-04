@@ -54,6 +54,18 @@
       "PLAYER": "NONE",
       "ASSISTANT": "OWNER"
     }
+  },
+  {
+    "name": "basic-instinct-system-rules",
+    "label": "Le Basic Instinct System",
+    "path": "packs/basic-instinct-system-rules",
+    "type": "JournalEntry",
+    "system": "custom-system-builder",
+    "flags": {},
+    "ownership": {
+      "PLAYER": "OBSERVER",
+      "ASSISTANT": "OWNER"
+    }
   }
   ]
 }

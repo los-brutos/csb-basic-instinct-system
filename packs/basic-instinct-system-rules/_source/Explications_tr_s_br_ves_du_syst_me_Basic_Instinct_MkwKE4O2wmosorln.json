@@ -1,0 +1,61 @@
+{
+  "name": "Explications très brèves du système Basic Instinct",
+  "_id": "MkwKE4O2wmosorln",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Les grands principes",
+      "type": "text",
+      "_id": "tCaXqkhkSKmeUbEI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Basic Instinct est un système simple, intuitif et narratif. Les MJ ne lancent pas de dés. Tout est entre les mains des joueuses et joueurs. Les caractéristiques, au nombre de 4 ou de 6, sont exprimées par des adjectifs et s'échelonnent sur 11 niveaux : Faible, Passable, Moyen, Bon, etc. </p><p>Seuls les 6 premiers niveaux sont accessibles aux humains. </p><p>Pour déterminer vos chances de réussite, comparez le niveau de votre héros à celui de l'adversaire ou de l'obstacle. Chaque niveau d'écart entre le héros et l'adversité modifie le pourcentage de base de 50 % par tranche de 10%.</p><blockquote><p><strong>Exemple 1 :</strong> Héros avec MÊLÉE à niveau BON contre ennemi BON = égalité → jet à 50%</p><p><strong>Exemple 2 :</strong> Héros avec MÊLÉE à niveau BON contre ennemi PASSABLE = deux niveaux d'écart en faveur du héros → jet à 70%.</p></blockquote><h2>Comment utiliser le tableau, l'outil ultime</h2><img src=\"modules/csb-basic-instinct-system/assets/pages/tableau-bis.webp\" /><p>Le tableau est pratique pour créer les PJ et très utile pour improviser des PNJ en 2 ou 3 secondes. Il se divise en deux parties. Celle de gauche présente les 11 niveaux avec des exemples concrets de ce qu'ils représentent. Exemple, en Combat, le niveau BON est celui d’un vétéran. Chaque niveau possède un chiffre associé pour calculer rapidement l'écart entre le héros et son adversaire.</p><blockquote><p><strong>Exemple 3 :</strong> Un héros avec une Présence MOYENNE (3) tente de convaincre un homme dont la Présence est FORTE (5). Calcul : 5 – 3 = 2, soit deux niveaux d'écart, représentant 20%. Le héros doit faire 30% ou moins (50% – 20%).</p></blockquote><p>La section de droite représente la qualification de la difficulté selon l’écart et donne directement la cible à atteindre.</p><blockquote><p><strong>Exemple 4 :</strong> Avec +2 en faveur du héros, le jet est Facile et la cible est de 70% ou moins.</p></blockquote><h2>Lire le résultat du jet</h2><p>Dans l'exemple 2, un peu plus haut, le héros doit faire 70% ou moins pour réussir. Cependant, s’il fait 10 % au-dessus ou au-dessous de son % cible, c’est un OUI MAIS. Pour une cible comme 70%, de 61 à 80% = OUI MAIS (réussite avec complication).</p><p>À 60% ou moins = Réussite parfaite. Plus proche de 1% = Réussite éclatante. Plus proche de 100% = Catastrophe.</p><p>À 5% ou moins = Réussite Critique : Succès parfait + un avantage narratif bonus</p><p>À 96% ou plus = FIASCO : La fiction frappe doublement</p><h2>Échecs narratifs : C’est la Fiction qui frappe</h2><p>Un échec ne signifie pas forcément que l'action échoue, mais que la fiction frappe.</p><blockquote><p><strong>Exemple 5 :</strong> Un voleur expert rate son jet de crochetage. Plutôt que de dire « tu n'y arrives pas », la serrure cède… mais un garde arrive sur l'entrefaites. Le but est de créer des rebondissements sans bloquer l'histoire. Il s'agit de « frapper » un peu plus fort que sur un simple OUI MAIS.</p></blockquote><h2>Les combat : des passes d'armes, du Cinéma et pas du Calcul</h2><p>Un jet de combat représente une passe d'armes complète, une succession d'attaques, de parades et de feintes, et non pas un simple coup ou un tir. Exception faite du tir à l'arc, plus lent et calculé. Laissez place au spectacle ! Comment ça se joue ? Le héros gagne ? Il blesse ou neutralise son adversaire. Il échoue son jet ? C'est l'adversaire qui prend le dessus et le touche. Sur un OUI MAIS, les deux combattants encaissent généralement une blessure dans l'échange, quoique parfois, le héros pourrait échapper à la blessure... mais à un fort prix ? C'est votre jugement qui compte.</p><p>Qui a plus de chance de l'emporte dans une passe d’armes ? Le plus compétent, celui qui a l’arme la plus appropriée et le mieux protégé. Ces trois éléments se fondent en un seul jet décisif. Oubliez les tableaux de dégâts et les points d'armure. Ici, tout est relatif selon la situation. Tout comme on compare le talent des deux adversaires, on compare simplement l'équipement et attribuez un avantage à celui le mieux adapté.</p><p>Meilleure arme : +5 à 10%</p><p>Meilleure protection : +5 à 10%</p><p>Équipement équivalent ? Aucun bonus. Note cruciale : Un bonus de +10% signifie un écart réel de 20 % entre les deux adversaires. C’est beaucoup. Dosez avec sagesse.</p><h2>Quand la Cible Ne Peut Pas Riposter</h2><p>En combat rapproché ou lors d'un échange de tirs, un jet raté signifie que l'adversaire vous blesse. Mais que se passe-t-il lorsque vous visez quelqu'un de désarmé, incapable de contre-attaquer ? Avec quelle caractéristique le défenseur réagit-il ? Tout dépend de la nature de l'attaque. Face à un javelot ou une flèche, le défenseur peut tenter une esquive physique avec Corps ou Adresse. Mais face à une balle qui file à 1 300 km/h ? Il ne s'agit plus de réflexes, mais d'anticipation, de lire le tireur, de deviner l’intention et plonger avant le coup de feu. Utilisez Esprit ou Mental pour ces attaques fulgurantes et rapide.</p><p>Quand vous ratez votre jet de tir, la fiction frappe-t-elle ? Posez la question : que peut-il logiquement arriver ? Vous tirez pour empêcher la fuite d’une cible et ratez ? La cible s'échappe. Simple. La fiction a déjà fait son oeuvre ici. Inutile d'ajouter un pépin. Mais si la cible reste sur place ? Peut-être qu'elle aperçoit une arme abandonnée pour répliquer au prochain tour ou qu'un allié surgit pour l’aider. En revanche, ne faites jamais surgir un danger absurde — pas de train qui apparaît de nulle part pour punir un tir raté. La règle du bon sens : Si aucune conséquence logique n'existe, il ne se passe rien. C'est l'avantage tactique d'attaquer une cible sans défense. Mais restez cohérent. Toujours.</p><h2>Gérer la Santé Physique : Deux Philosophies</h2><p>Sur la fiche, l'espace « Santé physique » comporte trois cases et une ligne d'écriture. Ce double système vous permet de choisir votre approche.</p><h3>Option 1 : Système à trois blessures</h3><p>Simple et efficace. Cochez une case par blessure. Trois cases cochées = héros hors-jeu.</p><h3>Option 2 : Narration contextuelle</h3><p>Décrivez chaque blessure en fonction du jet raté. Plus le résultat approche de 100 %, plus la blessure est sévère pour nos héros. Cette approche permet une mort ou neutralisation dès le premier ou deuxième coup si la situation le justifie.</p><h3>Les malus : question de cohérence</h3><p>Une blessure au bras pénalise-t-elle un héros qui court ? C'est vous qui décidez. Aucune réponse n'est « correcte » — l'important est d'être cohérent avec le ton de votre partie. Déterminez l'impact des blessures selon la logique narrative et le réalisme souhaité.</p><h2>États Émotionnels : Le Poids de Ce Que l'On Ressent</h2><p>Le système ne se limite pas à la peur et au stress. Il embrasse toute la palette des émotions intenses qui traversent les héros — colère, culpabilité, se sentir isolé... Si vous cochez un état émotionnel, c'est que votre personnage le vit intensément.</p><h3>Le pouvoir des émotions fortes</h3><p>Chaque fois qu'un héros s'abandonne à une émotion puissante, il coche l'état correspondant et reçoit 1 <strong>point de fiction</strong>, une ressource précieuse qu'il peut dépenser pour :</p><ul><li><p>Créer un avantage narratif (« Oui, cet escalier de secours existe bel et bien »)</p></li><li><p>Découvrir ou avoir sur soi un objet opportun</p></li><li><p>Bénéficier d'un bonus de +10% sur un jet crucial</p></li></ul><p>Combien de temps dure un État Émotionnel ? Faites appel à votre bon sens. La culpabilité d'avoir causé la mort de son frère ? Elle peut hanter un héros pendant des mois. Mais celle d'un mari volage qui trompe sa femme chaque semaine sans remords ? Elle s'évapore dès le lendemain.</p><h2>La gestion de la Jauge pression mentale : Quand l'Esprit Flanche</h2><p>Chaque État Émotionnel coché rapporte 1 Point de Fiction — c'est automatique. Mais il peut aussi faire grimper la Jauge de pression mentale. Notez bien : l’augmentation de la Jauge de pression mentale n'est pas systématique. Tout dépend de l'intensité et de la durée.</p><p>Question de contexte : Se sentir PERDU une heure ou deux, c'est humain, presque anodin. La Jauge ne bouge pas. Mais errer dans ce vide pendant des jours, seul face à un dilemme déchirant, là, la pression grimpe inexorablement.</p><h3>Seuil de rupture</h3><p>Avant la partie, établissez le seuil de rupture, cette frontière fragile où l'esprit cède. Si votre Jauge de pression mentale comporte 4 cases et que toutes sont cochées, le personnage sort du jeu. Pour combien de temps ? Une crise passagère, une dépression de trois mois, un traumatisme à vie ? L'histoire vous appartient. Décidez ensemble.</p><p></p><p><strong>Voilà. Bon jeu !</strong></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "custom-system-builder",
+        "systemVersion": "5.0.2",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_key": "!journal.pages!MkwKE4O2wmosorln.tCaXqkhkSKmeUbEI"
+    }
+  ],
+  "folder": null,
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "custom-system-builder",
+    "systemVersion": "5.0.2",
+    "createdTime": 1764864430211,
+    "modifiedTime": 1764864729641,
+    "lastModifiedBy": "2cTAYSrE6SlB5UuM"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "_key": "!journal!MkwKE4O2wmosorln"
+}

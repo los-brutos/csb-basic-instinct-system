@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# dépaquetage des compendiums du module CSB Bloodlust brigandyne
+# dépaquetage des compendiums du module CSB Basic Instinct System
 #
 # le paquet fvtt doit être  installé https://github.com/foundryvtt/foundryvtt-cli
 #
@@ -34,6 +34,8 @@ echo "  * unpack compendium templates-acteurs"
 fvtt package unpack -c templates-acteurs
 echo "  * unpack compendium templates-objets"
 fvtt package unpack -c templates-objets
+echo "  * unpack compendium basic-instinct-system-rules"
+fvtt package unpack -c basic-instinct-system-rules
 
 echo "* ********************************** *"
 echo "* all compendiums have been unpacked *"

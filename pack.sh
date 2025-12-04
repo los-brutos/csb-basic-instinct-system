@@ -33,6 +33,7 @@ fvtt package workon csb-basic-instinct-system --type=Module
 echo "  * create compendiums templates"
 fvtt package pack templates-acteurs
 fvtt package pack templates-objets
+fvtt package pack basic-instinct-system-rules
 
 echo "* ********************************* *"
 echo "* all compendiums have been created *"
