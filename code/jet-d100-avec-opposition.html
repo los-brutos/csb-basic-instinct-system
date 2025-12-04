@@ -17,7 +17,7 @@ ${#roll:= [1d100]}$
 Résultats possibles
  * 1 : échec critique        supérieur à 95
  * 2 : échec                 seuil+10  à 95 
- * 3 : échec OUI MAIS...     seuil     à seuil+10
+ * 3 : échec OUI MAIS...     seuil     à seuil+10 // non actif
  * 4 : réussite OUI MAIS...  seuil-10  à seuil
  * 5 : réussite              5         à seuil -10
  * 6 : réussite critique     inférieur à 5
@@ -25,7 +25,7 @@ Résultats possibles
 
 ${#result:= 0}$
 
-${#result:= roll > 95 ? 1 : roll > seuil+10 ? 2 : roll > seuil ? 3 : roll >= seuil-10 ? 4 : roll >= 5 ? 5 : 6}$
+${#result:= roll >= 95 ? 1 : roll > seuil+10 ? 2 : roll > seuil ? 4 : roll > seuil-10 ? 4 : roll >= 5 ? 5 : 6}$
 
 <!-- Affichage -->
 <p class="bis-chat-titre">${!carac}$</p>
@@ -37,7 +37,7 @@ ${#result:= roll > 95 ? 1 : roll > seuil+10 ? 2 : roll > seuil ? 3 : roll >= seu
         ${!roll}$
       </td>
       <td>
-        / ${!seuil}$ (Mod : ${!10*(niveau - niveauAdverse)}$)
+        / ${!seuil}$
       </td>
     </tr>
   </tbody>

@@ -67,40 +67,8 @@ nav.custom-tabs {
 .chat-message .bis-roll-reussite-critique, .chat-message .bis-roll-fiasco {
   border-width: 4px !important;
 }
-.chat-message .bis-roll-oui-mais::before, .chat-message .bis-roll-oui-mais::after {
+.chat-message .bis-roll-non-mais::before, .chat-message .bis-roll-non-mais::after {
   font: var(--fa-font-solid);
   content: '\f071' !important;
   padding: 0.5em;
 }
-
-
-/*
-.bis-roll-critical-success::before, .bis-roll-critical-success::after {
-  font: var(--fa-font-solid);
-  content: '\f560';
-  padding: 0.5em;
-}
-.bis-roll-critical-fail::before, .bis-roll-critical-fail::after {
-  font: var(--fa-font-solid);
-  content: '\f071';
-  padding: 0.5em;
-}
-.bis-roll-critical-info, .bis-roll-critical-success, .bis-roll-critical-fail {
-  font-weight: bold;
-}
-*/
-
-/**
- * Panneau à onglets
- * en utilisant https://discord.com/channels/715943353409339425/960978076370632784/1303844677513908335
- */
-
-
-/** 
-.custom-system-actor .sheet-tabs .item {
-  font-weight: bold;
-}
-.custom-system-actor .sheet-tabs .active {
-  text-decoration: overline underline;
-}
-*/
