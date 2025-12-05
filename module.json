@@ -9,18 +9,13 @@
   },
   "authors": [
     {
-      "name": "Eric des Imagitateurs",
-      "discord": "les_imagitateurs_eric",
-      "flags": {}
-    },
-    {
       "name": "Los Brutos",
       "discord": "losbrutos",
       "flags": {}
     },
     {
-      "name": "Sylvestre",
-      "discord": "bobourstoutcool",
+      "name": "Eric des Imagitateurs",
+      "discord": "les_imagitateurs_eric",
       "flags": {}
     }
   ],
