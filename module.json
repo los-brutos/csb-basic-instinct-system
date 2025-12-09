@@ -8,7 +8,7 @@
     "verified": "13"
   },
   "url": "https://github.com/los-brutos/csb-basic-instinct-system/",
-  "manifest": "https://github.com/los-brutos/csb-basic-instinct-system/releases/latest/download/module.json",
+  "manifest": "https://raw.githubusercontent.com/los-brutos/csb-basic-instinct-system/refs/tags/1.0.0/module.json",
   "download": "https://github.com/los-brutos/csb-basic-instinct-system/releases/download/1.0.0/csb-basic-instinct-system.zip",
   "readme": "https://github.com/los-brutos/csb-basic-instinct-system/blob/main/README.md",
   "bugs": "https://github.com/los-brutos/csb-basic-instinct-system/issues",
