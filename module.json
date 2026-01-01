@@ -2,14 +2,14 @@
   "id": "csb-basic-instinct-system",
   "title": "CSB - Basic Instinct System",
   "description": "Implémentation du Basic Instinct System des Imagitateurs avec Custom System Builder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
   "url": "https://github.com/los-brutos/csb-basic-instinct-system/",
-  "manifest": "https://raw.githubusercontent.com/los-brutos/csb-basic-instinct-system/refs/tags/1.0.1/module.json",
-  "download": "https://github.com/los-brutos/csb-basic-instinct-system/releases/download/1.0.1/csb-basic-instinct-system.zip",
+  "manifest": "https://raw.githubusercontent.com/los-brutos/csb-basic-instinct-system/refs/tags/1.0.2/module.json",
+  "download": "https://github.com/los-brutos/csb-basic-instinct-system/releases/download/1.0.2/csb-basic-instinct-system.zip",
   "readme": "https://github.com/los-brutos/csb-basic-instinct-system/blob/main/README.md",
   "bugs": "https://github.com/los-brutos/csb-basic-instinct-system/issues",
   "authors": [
