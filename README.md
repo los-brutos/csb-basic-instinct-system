@@ -6,6 +6,8 @@ Ce module implémente le système de jeu des Imagitateurs du JDR : le **Basic In
 
 Vous pouvez retrouver les Imagitateurs sur leur chaine [Les imagitateurs du JDR - YouTube](https://www.youtube.com/channel/UCfugznJG9IYjJB9pWC_e0FA)
 
+Merci à eux pour l'autorisation de la publication de ce module.
+
 ## Installation
 
 ### Standard
@@ -44,4 +46,10 @@ Le Template ne doit pas être utilisé comme tel, il serve à générer de nouve
 
 ### Fonctionnement du Basic Instinct System
 
-Lis le journal qui te donnera les billes pour jouer avec ce système.
+Lis le journal dans le compendium du Module : tu auras  toutes les billes pour jouer avec ce système.
+
+## Evolutions
+
+### 1.0.2
+
+- ajout d'un second template de fiche permettant de choisir une fiche avec ou sans affichage (possibilité de changer sans danger pour les données déjà existantes)
