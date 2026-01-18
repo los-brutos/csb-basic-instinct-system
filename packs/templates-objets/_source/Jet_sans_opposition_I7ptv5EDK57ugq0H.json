@@ -16,6 +16,7 @@
           "permission": 0,
           "tooltip": "",
           "visibilityFormula": "",
+          "editableFormula": "",
           "escapeHTML": false,
           "type": "label",
           "size": "full-size",
@@ -39,6 +40,7 @@
           "permission": 0,
           "tooltip": "",
           "visibilityFormula": "",
+          "editableFormula": "",
           "escapeHTML": false,
           "type": "table",
           "contents": [
@@ -53,11 +55,12 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "",
                 "escapeHTML": false,
                 "type": "label",
                 "size": "full-size",
                 "icon": "",
-                "value": "Seuil",
+                "value": "Difficulté",
                 "prefix": "",
                 "suffix": "",
                 "rollMessage": "",
@@ -76,56 +79,57 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "",
                 "escapeHTML": false,
                 "type": "select",
-                "size": "m-small",
+                "size": "full-size",
                 "label": "",
                 "defaultValue": "50",
                 "selectedOptionType": "custom",
                 "options": [
                   {
-                    "key": "0",
-                    "value": "0%"
-                  },
-                  {
-                    "key": "10",
-                    "value": "10%"
-                  },
-                  {
-                    "key": "20",
-                    "value": "20%"
-                  },
-                  {
-                    "key": "30",
-                    "value": "30%"
-                  },
-                  {
-                    "key": "40",
-                    "value": "40%"
-                  },
-                  {
-                    "key": "50",
-                    "value": "50%"
-                  },
-                  {
-                    "key": "60",
-                    "value": "60%"
-                  },
-                  {
-                    "key": "70",
-                    "value": "70%"
-                  },
-                  {
-                    "key": "80",
-                    "value": "80%"
+                    "key": "95",
+                    "value": "Les doigts dans le nez"
                   },
                   {
                     "key": "90",
-                    "value": "90%"
+                    "value": "Trop facile"
                   },
                   {
-                    "key": "100",
-                    "value": "100%"
+                    "key": "80",
+                    "value": "Très facile "
+                  },
+                  {
+                    "key": "70",
+                    "value": "Facile"
+                  },
+                  {
+                    "key": "60",
+                    "value": "Léger avantage"
+                  },
+                  {
+                    "key": "50",
+                    "value": "Egalité (sacré challenge)"
+                  },
+                  {
+                    "key": "40",
+                    "value": "Léger désavantage"
+                  },
+                  {
+                    "key": "30",
+                    "value": "Difficile"
+                  },
+                  {
+                    "key": "20",
+                    "value": "Très difficile"
+                  },
+                  {
+                    "key": "10",
+                    "value": "Trop difficile"
+                  },
+                  {
+                    "key": "5",
+                    "value": "Cause perdue"
                   }
                 ]
               }
@@ -141,6 +145,7 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "",
                 "escapeHTML": false,
                 "type": "label",
                 "size": "full-size",
@@ -164,9 +169,10 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "",
                 "escapeHTML": false,
                 "type": "select",
-                "size": "full-size",
+                "size": "m-small",
                 "label": "",
                 "defaultValue": "0",
                 "selectedOptionType": "custom",
@@ -229,6 +235,7 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "",
                 "escapeHTML": false,
                 "type": "label",
                 "size": "full-size",
@@ -252,6 +259,7 @@
                 "permission": 0,
                 "tooltip": "",
                 "visibilityFormula": "",
+                "editableFormula": "hasFiction",
                 "escapeHTML": false,
                 "type": "checkbox",
                 "size": "x-small",
@@ -277,7 +285,7 @@
       "type": "panel"
     },
     "uniqueId": "I7ptv5EDK57ugq0H",
-    "templateSystemUniqueVersion": 3913666442
+    "templateSystemUniqueVersion": 1027015939
   },
   "effects": [],
   "folder": null,
@@ -285,2597 +293,6 @@
     "custom-system-builder": {
       "version": "5.0.2",
       "templateHistory": [
-        [
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              1,
-              "defaultValue"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              1
-            ],
-            "lhs": {
-              "key": "modificateur",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "select",
-              "size": "full-size",
-              "label": "",
-              "defaultValue": "0",
-              "selectedOptionType": "custom",
-              "options": [
-                {
-                  "key": "-25",
-                  "value": "-25%"
-                },
-                {
-                  "key": "-20",
-                  "value": "-20%"
-                },
-                {
-                  "key": "-15",
-                  "value": "-15%"
-                },
-                {
-                  "key": "-10",
-                  "value": "-10%"
-                },
-                {
-                  "key": "-5",
-                  "value": "-5%"
-                },
-                {
-                  "key": "0",
-                  "value": "0"
-                },
-                {
-                  "key": "5",
-                  "value": "+5%"
-                },
-                {
-                  "key": "10",
-                  "value": "+10%"
-                },
-                {
-                  "key": "15",
-                  "value": "+15%"
-                },
-                {
-                  "key": "20",
-                  "value": "+20%"
-                },
-                {
-                  "key": "25",
-                  "value": "+25%"
-                }
-              ]
-            },
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1
-            ],
-            "lhs": null,
-            "rhs": {
-              "key": "modificateur",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "select",
-              "size": "full-size",
-              "label": "",
-              "defaultValue": "0",
-              "selectedOptionType": "custom",
-              "options": [
-                {
-                  "key": "-25",
-                  "value": "-25%"
-                },
-                {
-                  "key": "-20",
-                  "value": "-20%"
-                },
-                {
-                  "key": "-15",
-                  "value": "-15%"
-                },
-                {
-                  "key": "-10",
-                  "value": "-10%"
-                },
-                {
-                  "key": "-5",
-                  "value": "-5%"
-                },
-                {
-                  "key": "0",
-                  "value": "0"
-                },
-                {
-                  "key": "5",
-                  "value": "+5%"
-                },
-                {
-                  "key": "10",
-                  "value": "+10%"
-                },
-                {
-                  "key": "15",
-                  "value": "+15%"
-                },
-                {
-                  "key": "20",
-                  "value": "+20%"
-                },
-                {
-                  "key": "25",
-                  "value": "+25%"
-                }
-              ]
-            }
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
-        [
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              1,
-              "defaultValue"
-            ]
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              0
-            ],
-            "lhs": {
-              "key": "",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "label",
-              "size": "full-size",
-              "icon": "",
-              "value": "Point de fiction (+10%)\n",
-              "prefix": "",
-              "suffix": "",
-              "rollMessage": "",
-              "altRollMessage": "",
-              "rollMessageToChat": true,
-              "altRollMessageToChat": true,
-              "style": "bold"
-            },
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              0
-            ],
-            "lhs": null,
-            "rhs": {
-              "key": "",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "label",
-              "size": "full-size",
-              "icon": "",
-              "value": "Point de fiction (+10%)\n",
-              "prefix": "",
-              "suffix": "",
-              "rollMessage": "",
-              "altRollMessage": "",
-              "rollMessageToChat": true,
-              "altRollMessageToChat": true,
-              "style": "bold"
-            }
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              3,
-              1
-            ],
-            "lhs": {
-              "key": "fiction",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "checkbox",
-              "size": "x-small",
-              "label": "",
-              "defaultChecked": false
-            },
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              1
-            ],
-            "lhs": null,
-            "rhs": {
-              "key": "fiction",
-              "colSpan": 1,
-              "rowSpan": 1,
-              "cssClass": "",
-              "role": 0,
-              "editRole": 0,
-              "permission": 0,
-              "tooltip": "",
-              "visibilityFormula": "",
-              "escapeHTML": false,
-              "type": "checkbox",
-              "size": "x-small",
-              "label": "",
-              "defaultChecked": false
-            }
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
-        [
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              1,
-              "defaultValue"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              2,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              1,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "rows"
-            ],
-            "lhs": 5,
-            "rhs": 3
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
-        [
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents"
-            ],
-            "index": 1,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "colSpan": 1,
-                "rowSpan": 1,
-                "cssClass": "",
-                "role": 0,
-                "editRole": 0,
-                "permission": 0,
-                "tooltip": "",
-                "visibilityFormula": "",
-                "escapeHTML": false,
-                "type": "table",
-                "contents": [
-                  [
-                    {
-                      "key": "",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "label",
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "Seuil",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "rollMessageToChat": true,
-                      "altRollMessageToChat": true,
-                      "style": "bold"
-                    },
-                    {
-                      "key": "seuilSansOpposition",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "select",
-                      "size": "m-small",
-                      "label": "",
-                      "defaultValue": "50",
-                      "selectedOptionType": "custom",
-                      "options": [
-                        {
-                          "key": "0",
-                          "value": "0%"
-                        },
-                        {
-                          "key": "10",
-                          "value": "10%"
-                        },
-                        {
-                          "key": "20",
-                          "value": "20%"
-                        },
-                        {
-                          "key": "30",
-                          "value": "30%"
-                        },
-                        {
-                          "key": "40",
-                          "value": "40%"
-                        },
-                        {
-                          "key": "50",
-                          "value": "50%"
-                        },
-                        {
-                          "key": "60",
-                          "value": "60%"
-                        },
-                        {
-                          "key": "70",
-                          "value": "70%"
-                        },
-                        {
-                          "key": "80",
-                          "value": "80%"
-                        },
-                        {
-                          "key": "90",
-                          "value": "90%"
-                        },
-                        {
-                          "key": "100",
-                          "value": "100%"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "key": "",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "label",
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "Bonus/Malus",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "rollMessageToChat": true,
-                      "altRollMessageToChat": true,
-                      "style": "bold"
-                    },
-                    {
-                      "key": "modificateur",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "select",
-                      "size": "full-size",
-                      "label": "",
-                      "defaultValue": "0",
-                      "selectedOptionType": "custom",
-                      "options": [
-                        {
-                          "key": "-25",
-                          "value": "-25%"
-                        },
-                        {
-                          "key": "-20",
-                          "value": "-20%"
-                        },
-                        {
-                          "key": "-15",
-                          "value": "-15%"
-                        },
-                        {
-                          "key": "-10",
-                          "value": "-10%"
-                        },
-                        {
-                          "key": "-5",
-                          "value": "-5%"
-                        },
-                        {
-                          "key": "0",
-                          "value": "0"
-                        },
-                        {
-                          "key": "5",
-                          "value": "+5%"
-                        },
-                        {
-                          "key": "10",
-                          "value": "+10%"
-                        },
-                        {
-                          "key": "15",
-                          "value": "+15%"
-                        },
-                        {
-                          "key": "20",
-                          "value": "+20%"
-                        },
-                        {
-                          "key": "25",
-                          "value": "+25%"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "key": "",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "label",
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "Point de fiction (+10%)\n",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "rollMessageToChat": true,
-                      "altRollMessageToChat": true,
-                      "style": "bold"
-                    },
-                    {
-                      "key": "fiction",
-                      "colSpan": 1,
-                      "rowSpan": 1,
-                      "cssClass": "",
-                      "role": 0,
-                      "editRole": 0,
-                      "permission": 0,
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "escapeHTML": false,
-                      "type": "checkbox",
-                      "size": "x-small",
-                      "label": "",
-                      "defaultChecked": false
-                    }
-                  ],
-                  [
-                    null,
-                    null
-                  ],
-                  [
-                    null,
-                    null
-                  ]
-                ],
-                "cols": 2,
-                "rows": 3,
-                "layout": "ll"
-              }
-            }
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "type"
-            ],
-            "lhs": "table",
-            "rhs": "label"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "contents"
-            ],
-            "lhs": [
-              [
-                {
-                  "key": "",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "label",
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Seuil",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "rollMessageToChat": true,
-                  "altRollMessageToChat": true,
-                  "style": "bold"
-                },
-                {
-                  "key": "seuilSansOpposition",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "select",
-                  "size": "m-small",
-                  "label": "",
-                  "defaultValue": "50",
-                  "selectedOptionType": "custom",
-                  "options": [
-                    {
-                      "key": "0",
-                      "value": "0%"
-                    },
-                    {
-                      "key": "10",
-                      "value": "10%"
-                    },
-                    {
-                      "key": "20",
-                      "value": "20%"
-                    },
-                    {
-                      "key": "30",
-                      "value": "30%"
-                    },
-                    {
-                      "key": "40",
-                      "value": "40%"
-                    },
-                    {
-                      "key": "50",
-                      "value": "50%"
-                    },
-                    {
-                      "key": "60",
-                      "value": "60%"
-                    },
-                    {
-                      "key": "70",
-                      "value": "70%"
-                    },
-                    {
-                      "key": "80",
-                      "value": "80%"
-                    },
-                    {
-                      "key": "90",
-                      "value": "90%"
-                    },
-                    {
-                      "key": "100",
-                      "value": "100%"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "key": "",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "label",
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Bonus/Malus",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "rollMessageToChat": true,
-                  "altRollMessageToChat": true,
-                  "style": "bold"
-                },
-                {
-                  "key": "modificateur",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "select",
-                  "size": "full-size",
-                  "label": "",
-                  "defaultValue": "0",
-                  "selectedOptionType": "custom",
-                  "options": [
-                    {
-                      "key": "-25",
-                      "value": "-25%"
-                    },
-                    {
-                      "key": "-20",
-                      "value": "-20%"
-                    },
-                    {
-                      "key": "-15",
-                      "value": "-15%"
-                    },
-                    {
-                      "key": "-10",
-                      "value": "-10%"
-                    },
-                    {
-                      "key": "-5",
-                      "value": "-5%"
-                    },
-                    {
-                      "key": "0",
-                      "value": "0"
-                    },
-                    {
-                      "key": "5",
-                      "value": "+5%"
-                    },
-                    {
-                      "key": "10",
-                      "value": "+10%"
-                    },
-                    {
-                      "key": "15",
-                      "value": "+15%"
-                    },
-                    {
-                      "key": "20",
-                      "value": "+20%"
-                    },
-                    {
-                      "key": "25",
-                      "value": "+25%"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "key": "",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "label",
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Point de fiction (+10%)\n",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "rollMessageToChat": true,
-                  "altRollMessageToChat": true,
-                  "style": "bold"
-                },
-                {
-                  "key": "fiction",
-                  "colSpan": 1,
-                  "rowSpan": 1,
-                  "cssClass": "",
-                  "role": 0,
-                  "editRole": 0,
-                  "permission": 0,
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "escapeHTML": false,
-                  "type": "checkbox",
-                  "size": "x-small",
-                  "label": "",
-                  "defaultChecked": false
-                }
-              ],
-              [
-                null,
-                null
-              ],
-              [
-                null,
-                null
-              ]
-            ]
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "cols"
-            ],
-            "lhs": 2
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "rows"
-            ],
-            "lhs": 3
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "layout"
-            ],
-            "lhs": "ll"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "size"
-            ],
-            "rhs": "full-size"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "icon"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "value"
-            ],
-            "rhs": "Jet avec opposition"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "prefix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "suffix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "altRollMessage"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "rollMessageToChat"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "altRollMessageToChat"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "style"
-            ],
-            "rhs": "subtitle"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
-        [
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "defaultValue"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "tableKey"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "tableKeyColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "tableLabelColumn"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "formulaKeyOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "formulaLabelOptions"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "Jet avec opposition",
-            "rhs": "Jet sans opposition"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "customSize"
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "colSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "rowSpan"
-            ],
-            "rhs": 1
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "cssClass"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "role"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "editRole"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "permission"
-            ],
-            "rhs": 0
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "tooltip"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "visibilityFormula"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "escapeHTML"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "align"
-            ],
-            "rhs": "center"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "collapsible"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "defaultCollapsed"
-            ],
-            "rhs": true
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "title"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "titleStyle"
-            ],
-            "rhs": "default"
-          }
-        ],
         [
           {
             "kind": "A",
@@ -5332,6 +2749,2778 @@
             ],
             "rhs": "default"
           }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              10,
+              "key"
+            ],
+            "lhs": "100",
+            "rhs": "5"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              10,
+              "value"
+            ],
+            "lhs": "100%",
+            "rhs": "Cause perdue (5%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              9,
+              "key"
+            ],
+            "lhs": "90",
+            "rhs": "10"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              9,
+              "value"
+            ],
+            "lhs": "90%",
+            "rhs": "Trop difficile (10%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              8,
+              "key"
+            ],
+            "lhs": "80",
+            "rhs": "20"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              8,
+              "value"
+            ],
+            "lhs": "80%",
+            "rhs": "Très difficile (20%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              7,
+              "key"
+            ],
+            "lhs": "70",
+            "rhs": "30"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              7,
+              "value"
+            ],
+            "lhs": "70%",
+            "rhs": "Difficile (30%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              6,
+              "key"
+            ],
+            "lhs": "60",
+            "rhs": "40"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              6,
+              "value"
+            ],
+            "lhs": "60%",
+            "rhs": "Léger désavantage (40%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              5,
+              "value"
+            ],
+            "lhs": "50%",
+            "rhs": "Egalité (sacré challenge : 50%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              4,
+              "key"
+            ],
+            "lhs": "40",
+            "rhs": "60"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              4,
+              "value"
+            ],
+            "lhs": "40%",
+            "rhs": "Léger avantage (60%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              3,
+              "key"
+            ],
+            "lhs": "30",
+            "rhs": "70"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              3,
+              "value"
+            ],
+            "lhs": "30%",
+            "rhs": "Facile (70%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              2,
+              "key"
+            ],
+            "lhs": "20",
+            "rhs": "80"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              2,
+              "value"
+            ],
+            "lhs": "20%",
+            "rhs": "Très facile (80%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              1,
+              "key"
+            ],
+            "lhs": "10",
+            "rhs": "90"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              1,
+              "value"
+            ],
+            "lhs": "10%",
+            "rhs": "Trop facile (90%)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              0,
+              "key"
+            ],
+            "lhs": "0",
+            "rhs": "95"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              0,
+              "value"
+            ],
+            "lhs": "0%",
+            "rhs": "Les doigts dans le nez (95%)"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "size"
+            ],
+            "lhs": "m-small",
+            "rhs": "full-size"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": "m-small"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "editableFormula"
+            ],
+            "lhs": "",
+            "rhs": "hasFiction"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "value"
+            ],
+            "lhs": "Seuil",
+            "rhs": "Difficulté"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "defaultValue"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              10,
+              "value"
+            ],
+            "lhs": "Cause perdue (5%)",
+            "rhs": "Cause perdue"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              9,
+              "value"
+            ],
+            "lhs": "Trop difficile (10%)",
+            "rhs": "Trop difficile"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              8,
+              "value"
+            ],
+            "lhs": "Très difficile (20%)",
+            "rhs": "Très difficile"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              7,
+              "value"
+            ],
+            "lhs": "Difficile (30%)",
+            "rhs": "Difficile"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              6,
+              "value"
+            ],
+            "lhs": "Léger désavantage (40%)",
+            "rhs": "Léger désavantage"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              5,
+              "value"
+            ],
+            "lhs": "Egalité (sacré challenge : 50%)",
+            "rhs": "Egalité (sacré challenge)"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              4,
+              "value"
+            ],
+            "lhs": "Léger avantage (60%)",
+            "rhs": "Léger avantage"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              3,
+              "value"
+            ],
+            "lhs": "Facile (70%)",
+            "rhs": "Facile"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              2,
+              "value"
+            ],
+            "lhs": "Très facile (80%)",
+            "rhs": "Très facile "
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              1,
+              "value"
+            ],
+            "lhs": "Trop facile (90%)",
+            "rhs": "Trop facile"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "options",
+              0,
+              "value"
+            ],
+            "lhs": "Les doigts dans le nez (95%)",
+            "rhs": "Les doigts dans le nez"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKey"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableKeyColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "tableLabelColumn"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaKeyOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "formulaLabelOptions"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "customSize"
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "colSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "rowSpan"
+            ],
+            "rhs": 1
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "cssClass"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "role"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editRole"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "permission"
+            ],
+            "rhs": 0
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "tooltip"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "visibilityFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "editableFormula"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "escapeHTML"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "flow"
+            ],
+            "rhs": "vertical"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "align"
+            ],
+            "rhs": "center"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "verticalAlign"
+            ],
+            "rhs": "top"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "collapsible"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "defaultCollapsed"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "title"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "titleStyle"
+            ],
+            "rhs": "default"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -5343,9 +5532,9 @@
     "exportSource": null,
     "coreVersion": "13.351",
     "systemId": "custom-system-builder",
-    "systemVersion": "5.0.2",
+    "systemVersion": "5.1.0",
     "createdTime": 1764628940790,
-    "modifiedTime": 1764923722633,
+    "modifiedTime": 1768763159126,
     "lastModifiedBy": "2cTAYSrE6SlB5UuM"
   },
   "ownership": {
