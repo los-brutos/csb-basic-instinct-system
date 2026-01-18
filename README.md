@@ -50,6 +50,17 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.1.0
+
+**/!\ Le rechargement d'une fiche réinitialisera les valeurs des caractéristiques**
+
+- [journal] le tableau est séparé en deux pour une meilleure compréhension
+- [fiche] amélioration de la gestion des points de fiction :
+  - impossibilité d'utiliser un point de fiction dans un jet s'il n'y en a pas sur la fiche du personnage
+  - l'utilisation d'un point lors d'un jet, un point de fiction est décoché automatiquement et une information apparait sous le résultat du jet
+
+
+
 ### 1.0.2
 
 - ajout d'un second template de fiche permettant de choisir une fiche avec ou sans affichage (possibilité de changer sans danger pour les données déjà existantes)
