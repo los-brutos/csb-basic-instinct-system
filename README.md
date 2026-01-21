@@ -50,6 +50,18 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.2.0
+
+- intégration des nouvelles fiches
+  
+  - dénomination des caractéristiques
+  
+  - dénomination des états émotionnels
+  
+  - ajouts des états supplémentaires
+
+- nouvelle description du système par Eric des Imagitateurs avec moultes détails sur la vision du système et de son utilisation
+
 ### 1.1.0
 
 **/!\ Le rechargement d'une fiche réinitialisera les valeurs des caractéristiques**
@@ -58,8 +70,6 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 - [fiche] amélioration de la gestion des points de fiction :
   - impossibilité d'utiliser un point de fiction dans un jet s'il n'y en a pas sur la fiche du personnage
   - l'utilisation d'un point lors d'un jet, un point de fiction est décoché automatiquement et une information apparait sous le résultat du jet
-
-
 
 ### 1.0.2
 
