@@ -50,16 +50,17 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.3.0
+
+- ajout de la feuille 4 caractéristiques
+- la feuille avec les onglets est marquée maintenant comme dépréciée : elle ne sera plus maintenu. Utilisez donc de préférence la feuille sans onglet maintenant appelée `Basic Instinct (6 caractéristiques)`
+
 ### 1.2.0
 
 - intégration des nouvelles fiches
-  
   - dénomination des caractéristiques
-  
   - dénomination des états émotionnels
-  
   - ajouts des états supplémentaires
-
 - nouvelle description du système par Eric des Imagitateurs avec moultes détails sur la vision du système et de son utilisation
 
 ### 1.1.0
