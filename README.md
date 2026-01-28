@@ -50,6 +50,10 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.4.0
+
+- ajout des capacités : possibilité d'afficher ou de masquer des capacités/pouvoirs/etc. pour les personnages avec les jets associés
+
 ### 1.3.0
 
 - ajout de la feuille 4 caractéristiques
