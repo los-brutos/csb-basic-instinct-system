@@ -1,0 +1,57 @@
+${#fiction:= false}$
+${?#{Jet sans opposition}}$
+
+${#carac:= sameRow('capacite')}$
+${#niveau:= sameRow('niveau')}$
+
+<!-- A voir si le seuil est à comparer avec le niveau de la caractéristique ou si on prend seulement le seuil (cas actuel) -->
+${#seuil:= seuilSansOpposition}$
+
+${#fiction:= fiction ? 10 : 0}$
+
+${#seuil:= seuil + modificateur + fiction}$
+${#seuil:= seuil > 95 ? 95 : seuil}$
+${#seuil:= 5 > seuil  ?  5 : seuil}$
+
+${#roll:= [1d100]}$
+
+<!-- 
+Résultats possibles
+ * 1 : échec critique        supérieur à 95
+ * 2 : échec                 seuil+10  à 95 
+ * 3 : échec OUI MAIS...     seuil     à seuil+10 // Non actif
+ * 4 : réussite OUI MAIS...  seuil-10  à seuil
+ * 5 : réussite              5         à seuil -10
+ * 6 : réussite critique     inférieur à 5
+-->
+
+${#result:= 0}$
+
+${#result:= roll >= 95 ? 1 : roll > seuil+10 ? 2 : roll > seuil ? 4 : roll > seuil-10 ? 4 : roll >= 5 ? 5 : 6}$
+
+<!-- Affichage -->
+<p class="bis-chat-titre">${!carac}$</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td class="bis-result">
+        ${!roll}$
+      </td>
+      <td>
+        / ${!seuil}$
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="bis-roll-result  ${!switchCase(result,1,'bis-roll-echec bis-roll-fiasco',2,'bis-roll-echec',3,'bis-roll-echec bis-roll-oui-mais',4,'bis-roll-reussite bis-roll-oui-mais',5,'bis-roll-reussite',6,'bis-roll-reussite bis-roll-reussite-critique')}$">
+  ${!switchCase(result,1,'Fiasco',2,'Echec',3,"Réussite / Oui mais...",4,"Réussite / Oui mais...",5,'Réussite',6,'Réussite critique')}$
+</p>
+
+<!-- gestion du point de fiction -->
+${#usedFiction:= fiction == 0 ? false : true}$
+<!-- on parcourt tous les points de fiction pour décocher le premier coché que l'on trouve -->
+
+${#usedFiction ? (fiction9 ? setPropertyInEntity('self', 'fiction9', false) : fiction8 ? setPropertyInEntity('self', 'fiction8', false) : fiction7 ? setPropertyInEntity('self', 'fiction7', false) : fiction6 ? setPropertyInEntity('self', 'fiction6', false) : fiction5 ? setPropertyInEntity('self', 'fiction5', false) : fiction4 ? setPropertyInEntity('self', 'fiction4', false) : fiction3 ? setPropertyInEntity('self', 'fiction3', false) : fiction2 ? setPropertyInEntity('self', 'fiction2', false) : fiction1 ? setPropertyInEntity('self', 'fiction1', false) : fiction0 ? setPropertyInEntity('self', 'fiction0', false) : "<p>Pas de point de fiction disponible !</p>" ) : ""}$
+${!usedFiction ? "<p>Un point de fiction a été utilisé !</p>" : ""}$
