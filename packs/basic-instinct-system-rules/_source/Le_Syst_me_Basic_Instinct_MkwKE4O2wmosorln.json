@@ -37,6 +37,42 @@
         "default": -1
       },
       "_key": "!journal.pages!MkwKE4O2wmosorln.tCaXqkhkSKmeUbEI"
+    },
+    {
+      "sort": 200000,
+      "name": "Les Imagitateurs du JdR",
+      "type": "text",
+      "_id": "hWj6MZcybbkicWos",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Pour retrouver les Imagitateurs, suivez la petite musique qui imagite dans votre tête. Ou suivez plutôt ce lien : https://linktr.ee/imagitateursdujdr</p><p></p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "custom-system-builder",
+        "systemVersion": "5.1.0",
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_key": "!journal.pages!MkwKE4O2wmosorln.hWj6MZcybbkicWos"
     }
   ],
   "folder": null,
@@ -50,7 +86,7 @@
     "systemId": "custom-system-builder",
     "systemVersion": "5.0.2",
     "createdTime": 1764864430211,
-    "modifiedTime": 1769015959543,
+    "modifiedTime": 1770825090522,
     "lastModifiedBy": "2cTAYSrE6SlB5UuM"
   },
   "ownership": {
