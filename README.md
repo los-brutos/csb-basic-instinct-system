@@ -50,6 +50,10 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.5.0
+
+- fix *jet avec opposition* de la caractéristique Adresse
+
 ### 1.4.0
 
 - ajout des capacités : possibilité d'afficher ou de masquer des capacités/pouvoirs/etc. pour les personnages avec les jets associés
