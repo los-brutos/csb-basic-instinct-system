@@ -50,6 +50,12 @@ Lis le journal dans le compendium du Module : tu auras  toutes les billes pour 
 
 ## Evolutions
 
+### 1.6.0
+
+- possibilité de changer les libellés des caractéristiques
+- si un libellé est vide alors la caractéristique ne s'affichera pas
+- ajout d'un petit (tout petit) manuel pour quelques astuces
+
 ### 1.5.0
 
 - fix *jet avec opposition* de la caractéristique Adresse
