@@ -1,0 +1,62 @@
+{
+  "folder": null,
+  "name": "Petit manuel du module",
+  "_id": "CXSZBUcRnPv2PEeV",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Petit manuel du module",
+      "type": "text",
+      "_id": "hKmbPvPfWlRUgD5W",
+      "system": {},
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Facile à utiliser, facile à adapter</p><p>Enfin, j'espère :-)</p><p>Voici quelques astuces !</p><p></p><h2>Création d'un personnage</h2><ul><li><p>Créez un acteur</p></li><li><p>Choisissez son nom</p></li><li><p>Mettez \"Personnage\" pour sont Type</p></li><li><p>Modèle : choisissez le \"Basic Instinct\"</p></li><li><p>Rafraichissez pour afficher les champs de la fiche</p></li></ul><h2>Modifier les Caractéristiques</h2><p>En tant que MJ, vous pouvez changer pour chaque personnage.</p><p>Pour cela, </p><ul><li><p>allez tout en bas de la fiche</p></li><li><p> Ouvrez les données du MJ</p></li><li><p>Dans l'onglet \"Libellés des caractéristiques\", vous pouvez modifier les intitulés de chaque caractéristique</p></li><li><p>Si un libellé est laissé vide, la caractéristique ne s'affichera pas. Du coup, vous pouvez jouer avec 4 ou 6 caractéristiques. Ou un autre chiffre (max. 6) et donc même des vaisseaux, véhicules ou bateaux !</p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "custom-system-builder",
+        "systemVersion": "5.2.0",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      },
+      "_key": "!journal.pages!CXSZBUcRnPv2PEeV.hKmbPvPfWlRUgD5W"
+    }
+  ],
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "custom-system-builder",
+    "systemVersion": "5.2.0",
+    "createdTime": 1772814386698,
+    "modifiedTime": 1772814386698,
+    "lastModifiedBy": "2cTAYSrE6SlB5UuM"
+  },
+  "ownership": {
+    "default": 0,
+    "2cTAYSrE6SlB5UuM": 3
+  },
+  "sort": 0,
+  "_key": "!journal!CXSZBUcRnPv2PEeV"
+}
